@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelist Words Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← Back to Main</a>
+        <h1>Whitelist Words Documentation</h1>
+    </header>
+    <main>
+        <div class="docs-container">
+            <table class="commands-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/addwhitelist <word/link></code></td>
+                        <td>Adds a word, link, contact, or other item to the whitelist, preventing bot deletion.</td>
+                        <td><code>/addwhitelist google.com</code> or <code>/addwhitelist hello</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/whitelist</code></td>
+                        <td>Lists all whitelisted words, links, or items.</td>
+                        <td><code>/whitelist</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/removew <word></code></td>
+                        <td>Removes a word or item from the whitelist.</td>
+                        <td><code>/removew google.com</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/punishw <kick/mute/tmute/ban></code></td>
+                        <td>Sets punishment for non-whitelisted content (kick, mute, tmute, ban). Default: delete message.</td>
+                        <td><code>/punishw ban</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

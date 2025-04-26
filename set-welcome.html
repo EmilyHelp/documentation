@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Welcome Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← Back to Main</a>
+        <h1>Set Welcome Documentation</h1>
+    </header>
+    <main>
+        <div class="docs-container">
+            <table class="commands-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/welcome</code></td>
+                        <td>Displays the currently set welcome message.</td>
+                        <td><code>/welcome</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/setwelcome</code></td>
+                        <td>Sets a welcome message by replying to a message. Supports markdown: <code>{firstname}</code>, <code>{groupname}</code>, <code>{profilelink}</code>, <code>{username}</code>, <code>&lt;b&gt;bold&lt;/b&gt;</code>, <code>&lt;i&gt;italic&lt;/i&gt;</code>. Add inline buttons with <code>&lt;button&gt;name url&lt;/button&gt;</code>.</td>
+                        <td><code>/setwelcome</code> (reply to a message like <code>Welcome {firstname} to {groupname}! &lt;b&gt;Enjoy&lt;/b&gt; our &lt;i&gt;community&lt;/i&gt;! &lt;button&gt;Visit google.com&lt;/button&gt;</code>)</td>
+                    </tr>
+                    <tr>
+                        <td><code>/removewelcome</code></td>
+                        <td>Disables the welcome message.</td>
+                        <td><code>/removewelcome</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Commands Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← Back to Main</a>
+        <h1>Admin Commands Documentation</h1>
+    </header>
+    <main>
+        <div class="docs-container">
+            <table class="commands-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/ban &lt;reason&gt;</code></td>
+                        <td>Bans a user from the group by replying to their message with a specified reason.</td>
+                        <td><code>/ban Spamming the group</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/mute &lt;reason&gt;</code></td>
+                        <td>Mutes a user, preventing them from sending messages, by replying with a reason.</td>
+                        <td><code>/mute Inappropriate language</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/unmute &lt;reason&gt;</code></td>
+                        <td>Unmutes a previously muted user by replying with a reason.</td>
+                        <td><code>/unmute Completed timeout period</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/unban &lt;reason&gt;</code></td>
+                        <td>Unbans a previously banned user by replying with a reason.</td>
+                        <td><code>/unban Appeal approved</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/tmute 1h &lt;reason&gt;</code></td>
+                        <td>Temporarily mutes a user for a specified duration (1s, 1m, 1h, 1d) with a reason.</td>
+                        <td><code>/tmute 1h Disruptive behavior</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/tban 1h &lt;reason&gt;</code></td>
+                        <td>Temporarily bans a user for a specified duration (1s, 1m, 1h, 1d) with a reason.</td>
+                        <td><code>/tban 1d Repeated rule violations</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/kick</code></td>
+                        <td>Kicks a user from the group (they can rejoin) by replying to their message.</td>
+                        <td><code>/kick</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/promote &lt;title&gt;</code></td>
+                        <td>Promotes a member to an admin role, optionally assigning a custom title.</td>
+                        <td><code>/promote Moderator</code> or <code>/promote</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/demote</code></td>
+                        <td>Demotes an admin to a regular member by replying to their message.</td>
+                        <td><code>/demote</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/pin</code></td>
+                        <td>Pins a message to the top of the group chat by replying to it.</td>
+                        <td><code>/pin</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/unpin</code></td>
+                        <td>Unpins a previously pinned message by replying to it.</td>
+                        <td><code>/unpin</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/botpin</code></td>
+                        <td>Bot sends a message and automatically pins it to the group chat.</td>
+                        <td><code>/botpin</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/adminlist</code></td>
+                        <td>Displays the list of current admins in the group.</td>
+                        <td><code>/adminlist</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/disableadmin</code></td>
+                        <td>Disables all admin commands for members, admins, and owners until re-enabled.</td>
+                        <td><code>/disableadmin</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

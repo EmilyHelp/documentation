@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocklist Words Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← Back to Main</a>
+        <h1>Blocklist Words Documentation</h1>
+    </header>
+    <main>
+        <div class="docs-container">
+            <table class="commands-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/blocklist</code></td>
+                        <td>Shows the list of blocklisted words or sentences.</td>
+                        <td><code>/blocklist</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/blocklist word</code> or <code>/blocklist "sentence"</code></td>
+                        <td>Adds a word or sentence (in quotes) to the blocklist.</td>
+                        <td><code>/blocklist badword</code> or <code>/blocklist "no spamming allowed"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/removeb <word/"sentence"></code></td>
+                        <td>Removes a word or sentence from the blocklist.</td>
+                        <td><code>/removeb badword</code> or <code>/removeb "no spamming allowed"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/punishb <kick/mute/tmute/ban></code></td>
+                        <td>Sets punishment for using blocklisted words (kick, mute, tmute, ban). Default: delete message.</td>
+                        <td><code>/punishb mute</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

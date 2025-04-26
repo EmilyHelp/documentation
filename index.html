@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional UI Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search boxes..." oninput="filterBoxes()">
+            <button class="search-btn">🔍</button>
+        </div>
+    </header>
+    <main>
+        <div class="box-container" id="boxContainer">
+            <a href="admin-commands.html" class="box box-1" id="box-admin-commands">
+                <h2>Admin Commands</h2>
+            </a>
+            <a href="antispam.html" class="box box-2" id="box-antispam">
+                <h2>Antispam</h2>
+            </a>
+            <a href="blocklist-words.html" class="box box-3" id="box-blocklist-words">
+                <h2>Blocklist Words</h2>
+            </a>
+            <a href="whitelist-words.html" class="box box-4" id="box-whitelist-words">
+                <h2>Whitelist Words</h2>
+            </a>
+            <a href="message-deleter.html" class="box box-5" id="box-message-deleter">
+                <h2>Message Deleter</h2>
+            </a>
+            <a href="recurring-message.html" class="box box-6" id="box-recurring-message">
+                <h2>Recurring Message</h2>
+            </a>
+            <a href="language-blocker.html" class="box box-7" id="box-language-blocker">
+                <h2>Language Blocker</h2>
+            </a>
+            <a href="punishment.html" class="box box-8" id="box-punishment">
+                <h2>Punishment</h2>
+            </a>
+            <a href="delete-buy-sell.html" class="box box-9" id="box-delete-buy-sell">
+                <h2>Delete Buy/Sell Messages</h2>
+            </a>
+            <a href="delete-crypto.html" class="box box-10" id="box-delete-crypto">
+                <h2>Delete Crypto Messages</h2>
+            </a>
+            <a href="delete-movie.html" class="box box-11" id="box-delete-movie">
+                <h2>Delete Movie Messages</h2>
+            </a>
+            <a href="delete-abusive.html" class="box box-12" id="box-delete-abusive">
+                <h2>Delete Abusive Messages</h2>
+            </a>
+            <a href="block-18plus.html" class="box box-13" id="box-block-18plus">
+                <h2>Block 18+ Media</h2>
+            </a>
+            <a href="set-welcome.html" class="box box-14" id="box-set-welcome">
+                <h2>Set Welcome</h2>
+            </a>
+            <a href="filters.html" class="box box-15" id="box-filters">
+                <h2>Filters</h2>
+            </a>
+            <a href="approve-members.html" class="box box-16" id="box-approve-members">
+                <h2>Approve Members</h2>
+            </a>
+            <a href="robot-verification.html" class="box box-17" id="box-robot-verification">
+                <h2>Robot Verification</h2>
+            </a>
+            <a href="protect-raid.html" class="box box-18" id="box-protect-raid">
+                <h2>Protect from Raid</h2>
+            </a>
+            <a href="other-commands.html" class="box box-19" id="box-other-commands">
+                <h2>Other Commands</h2>
+            </a>
+        </div>
+    </main>
+    <script>
+        function filterBoxes() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const boxes = Array.from(document.getElementsByClassName('box'));
+            const container = document.getElementById('boxContainer');
+
+            const sortedBoxes = boxes.sort((a, b) => {
+                const aTitle = a.querySelector('h2').textContent.toLowerCase();
+                const bTitle = b.querySelector('h2').textContent.toLowerCase();
+                const aMatches = aTitle.includes(input);
+                const bMatches = bTitle.includes(input);
+                if (aMatches && !bMatches) return -1;
+                if (!aMatches && bMatches) return 1;
+                return 0;
+            });
+
+            container.innerHTML = '';
+            sortedBoxes.forEach((box, index) => {
+                container.appendChild(box);
+                const title = box.querySelector('h2').textContent.toLowerCase();
+                if (title.includes(input)) {
+                    box.style.visibility = 'visible';
+                    box.style.opacity = '1';
+                    box.style.order = index;
+                } else {
+                    box.style.visibility = 'hidden';
+                    box.style.opacity = '0';
+                    box.style.order = index + boxes.length;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

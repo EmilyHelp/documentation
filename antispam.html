@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antispam Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← Back to Main</a>
+        <h1>Antispam Documentation</h1>
+    </header>
+    <main>
+        <div class="docs-container">
+            <table class="commands-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/antispam</code></td>
+                        <td>Checks the current antispam settings for the group.</td>
+                        <td><code>/antispam</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/setantispam 7 10s</code></td>
+                        <td>Sets antispam to delete messages if a member sends 7 messages within 10 seconds. Timer options: 1s, 1m, 1h.</td>
+                        <td><code>/setantispam 7 10s</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/disableAntispam</code></td>
+                        <td>Disables the antispam feature for the group.</td>
+                        <td><code>/disableAntispam</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/punisha <kick/mute/tmute/ban></code></td>
+                        <td>Sets punishment for spammers (kick, mute, tmute, ban). Default: delete message.</td>
+                        <td><code>/punisha kick</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

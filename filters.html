@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← Back to Main</a>
+        <h1>Filters Documentation</h1>
+    </header>
+    <main>
+        <div class="docs-container">
+            <table class="commands-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/filter <trigger> <reply></code></td>
+                        <td>Sets the bot to reply with "reply" whenever "trigger" is said. Use quotes for multi-word triggers.</td>
+                        <td><code>/filter hello Hi there!</code> or <code>/filter "good morning" Good day!</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/filters</code></td>
+                        <td>Lists all active filters in the chat.</td>
+                        <td><code>/filters</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/stop <trigger></code></td>
+                        <td>Stops the bot from replying to the specified trigger.</td>
+                        <td><code>/stop hello</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/stopall</code></td>
+                        <td>Stops all filters in the current chat (cannot be undone).</td>
+                        <td><code>/stopall</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
